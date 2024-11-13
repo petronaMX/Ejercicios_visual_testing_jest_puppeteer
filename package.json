@@ -1,0 +1,19 @@
+{
+  "name": "ejercicios_visual_testing_jest_puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-snapshots": "jest  --config=jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest  --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-image-snapshot": "^6.4.0",
+    "prettier": "^3.3.3",
+    "puppeteer": "^23.7.1"
+  }
+}
