@@ -56,7 +56,7 @@ describe('Visual tests', () => {
         });
     });
 
-    test.only('Snapshot de iPhone', async ()=>{
+    test('Snapshot de iPhone', async ()=>{
         await page.goto('https://example.com',{
             waitUntil: 'networkidle0',
         });

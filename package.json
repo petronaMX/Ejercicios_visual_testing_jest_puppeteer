@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-snapshots": "jest  --config=jest.config.js --detectOpenHandles --forceExit",
-    "test-snapshots-update": "jest  --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+    "test-snapshots-update": "jest  --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test-percy": "percy exec -- jest -i ./tests-snapshots/__tests__/visual-percy.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@percy/cli": "^1.30.2",
+    "@percy/puppeteer": "^2.0.2",
     "jest": "^29.7.0",
     "jest-image-snapshot": "^6.4.0",
     "prettier": "^3.3.3",
