@@ -15,3 +15,8 @@ Para ejecutar las pruebas de visual testing, utiliza los siguientes comandos:
     ```bash
     npm run test-snapshots-update
     ```
+
+- Para prubas visuales con percy:
+    ```bash
+    npm run test-percy
+    ```
